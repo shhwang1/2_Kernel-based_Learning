@@ -267,7 +267,7 @@ from sklearn import svm
 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_percentage_error
+from sklearn.metrics import mean_absolute, r2_score, mean_absolute_percentage_error
 
 def SVR(args):
     data = pd.read_csv(args.data_path + args.reg_data)
@@ -298,7 +298,7 @@ def SVR(args):
     # Prediction
     pred_clf = clf.predict(X_test)
     reg_r2_score = r2_score(y_test, pred_clf)
-    reg_mae_score = mean_squared_error(y_test, pred_clf)
+    reg_mae_score = mean_absolute_error(y_test, pred_clf)
     reg_mape_score = mean_absolute_percentage_error(y_test, pred_clf)
 
     print('SVR with ' + args.kernel + 'R2 Score : ', reg_r2_score)
