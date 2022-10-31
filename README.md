@@ -324,7 +324,7 @@ The performance shows a slight increase until the C value has a large value of 4
 <p align="center"><img src="https://user-images.githubusercontent.com/115224653/198970430-1e4949d9-0c24-4712-91aa-30ad0707d1aa.png" width="750" height="450"></p>
 
 Likewise, rbf's performance improved as C increased to a value of 1000, and the increase in performance was much larger than that of linear kernel. Similarly, C was re-experimented by increasing it to 4000.   
-<p align="center"><img src="https://user-images.githubusercontent.com/115224653/198961904-c388d026-36a3-42bd-b419-18ecee5f53ad.png" width="750" height="450"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/115224653/198970540-76889d57-b54d-4f80-a897-32c62de719c9.png" width="750" height="450"></p>
 
 The C value was intended to be up to 4000, but the performance continued to rise to 16000. Through this, it was found that the threshold of the C value, in which performance improvement continues, was different for each kernel.
 
